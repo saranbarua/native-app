@@ -1,15 +1,21 @@
-import { StyleSheet, View } from 'react-native';
+import { useFonts } from 'expo-font';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { colors } from './src/themes/colors';
+
 
 export default function App() {
+//font load in this section by usnig hook
+const [fontsLoaded] = useFonts({
+  'Antonio-Medium': require('./assets/fonts/Antonio-Medium.ttf'),
+  'Spartan-Bold': require('./assets/fonts/Spartan-Bold.ttf'),
+  'Spartan-Regular': require('./assets/fonts/Spartan-regular.ttf'),
+});
+
   return (
-    <View style={[styles.container, {
-      // Try setting `flexDirection` to `"row"`.
-      flexDirection: "row"
-    }]}>
-      <View style={{ flex: 2, backgroundColor: "red" }} />
-      <View style={{ flex: 2, backgroundColor: "darkorange" }} />
-      <View style={{ flex: 2, backgroundColor: "green" }} />
-    </View>
+    <View style={styles.container}>
+    <Text style={styles.dummyText}>Create your first React Native App</Text>
+  </View>
   );
 }
 
@@ -19,6 +25,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+   backgroundColor: colors.darkOrange,
+   alignItems: 'center',
+   justifyContent: 'center'
   },
+  dummyText:{
+    fontSize: 20,
+
+  }
 });

@@ -16,6 +16,8 @@ const BOLD = {
     color: colors.white
 }
 
+//exports with object
+
 export const presets = {
     default: BASE,
     bold: BOLD,

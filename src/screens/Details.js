@@ -6,6 +6,7 @@ import Text from "../components/texts/text";
 import { EarthSvg, JupiterSvg, MarsSvg, MercurySvg, NeptuneSvg, SaturnSvg, UranusSvg, VenusSvg } from "../svg";
 import { colors, spacing } from "../theme";
 
+
 const getImage = (name) => {
   switch (name) {
       case 'mercury':

@@ -28,6 +28,7 @@ const getImage = (name) => {
   }
 }
 
+
 const PlanetSection = ({ title, value }) => {
   return (
     <View

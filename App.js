@@ -1,9 +1,7 @@
+import { DarkTheme, NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Text from './src/components/text/text'
-import { spacing } from './src/themes/spacing';
-import { NavigationContainer, DarkTheme } from '@react-navigation/native';
+import { StyleSheet, View } from 'react-native';
 
 export default function App() {
 //font load in this section by usnig hook

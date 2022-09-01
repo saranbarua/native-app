@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     }
 })
 
-export default function PlanetHeader({ backButton  = false }) {
+export default function planetheader({ backButton  = false }) {
     const navigation = useNavigation();
 
     return (

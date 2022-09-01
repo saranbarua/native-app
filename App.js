@@ -1,7 +1,18 @@
 import { DarkTheme, NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useFonts } from 'expo-font';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+// import { colors } from "./src/theme/colors";
+// import Text from "./src/components/texts/text";
+import { StyleSheet, View, ActivityIndicator} from 'react-native';
+//internal imports
+import Details from './src/screens/Details';
+import Home from './src/screens/Home';
+import Web from './src/screens/Web';
+
+const Stack = createNativeStackNavigator();
+
+
 
 export default function App() {
 //font load in this section by usnig hook
@@ -12,7 +23,7 @@ const [fontsLoaded] = useFonts({
 });
 
 if (!fontsLoaded) {
-  return <ActivityIndicator />
+  return <ActivityIndicator />;
 } else {
   return (
     <View style={{ flex: 1, backgroundColor: 'black'}}>
@@ -29,7 +40,7 @@ if (!fontsLoaded) {
 }
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
 container: {
   flex: 1,
   backgroundColor: '#000',

@@ -1,4 +1,4 @@
-import { colors, typography } from '../../theme/'
+import { colors, typography } from '../../theme'
 
 const BASE = {
     fontFamily: typography.primary,

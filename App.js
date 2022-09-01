@@ -1,9 +1,8 @@
 import { useFonts } from 'expo-font';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { colors } from './src/themes/colors';
+import Text from './src/components/text/text'
 import { spacing } from './src/themes/spacing';
-import { typography } from './src/themes/typography';
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 
 export default function App() {

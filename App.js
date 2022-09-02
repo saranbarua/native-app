@@ -22,6 +22,7 @@ let [fontsLoaded] = useFonts({
   'Spartan-Regular': require('./assets/fonts/Spartan-Regular.ttf'),
 });
 
+//
 if (!fontsLoaded) {
   return <ActivityIndicator />;
 } else {

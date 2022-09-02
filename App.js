@@ -10,7 +10,7 @@ import Details from './src/screens/Details';
 import Home from './src/screens/Home';
 import Web from './src/screens/Web';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator(); //smothly screen from tab a way for your app to transition between screens where each new screen is placed on top of a stack.
 
 
 

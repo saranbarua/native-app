@@ -232,6 +232,7 @@ export default function Home({ navigation }) {
         )
     }
 
+    //
     const searchFilter = (text) => {
         const fileredList = PLANET_LIST.filter(item => {
             const itemData = item.name.toUpperCase()

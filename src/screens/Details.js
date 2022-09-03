@@ -70,22 +70,15 @@ export default function Details({ route, navigation }) {
     <SafeAreaView style={{ backgroundColor: colors.black, flex: 1 }}>
       <PlanetHeader backButton={true} />
       <ScrollView>
-        <View
-          style={{
-            padding: spacing[5],
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          
+        <View style={{ padding: spacing[5], alignItems: "center", justifyContent: "center",  }}>
           {getImage(name)}
+
           <View style={{ marginTop: spacing[8] }}>
-            <Text
-              preset="h1"
-              style={{ textAlign: "center", textTransform: "uppercase" }}
-            >
+            
+            <Text preset="h1" style={{ textAlign: "center", textTransform: "uppercase" }} >
               {name}
             </Text>
+
             <Text
               style={{
                 marginTop: spacing[5],

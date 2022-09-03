@@ -227,7 +227,7 @@ export default function Home({ navigation }) {
                     <View style={[ styles.circle, {backgroundColor: color}]} />
                     <Text style={styles.planetName}>{name}</Text>
                 </View>
-                <AntDesign name="right" size={12} color={colors.grey} />
+                <AntDesign name="right" size={12} color={colors.grey} /> //vector sign 
             </TouchableOpacity>
         )
     }

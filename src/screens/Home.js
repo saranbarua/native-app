@@ -232,7 +232,7 @@ export default function Home({ navigation }) {
         )
     }
 
-    //
+    //search filter
     const searchFilter = (text) => {
         const fileredList = PLANET_LIST.filter(item => {
             const itemData = item.name.toUpperCase()

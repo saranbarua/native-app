@@ -23,11 +23,10 @@ export default function planetheader({ backButton  = false }) {
     return (
         <View style={styles.container}>
             {backButton && 
-                <TouchableOpacity onPress={() => navigation.goBack()}>
+                <TouchableOpacity onPress={() => navigation.goBack()}> 
                     <AntDesign name="left" size={24} color="white" style={{ marginRight: spacing[4], top: 2 }} />
                 </TouchableOpacity>
             }
-        
             <Text preset="h2" >
                 THE PLANETS
             </Text>

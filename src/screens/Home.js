@@ -237,8 +237,8 @@ export default function Home({ navigation }) {
         const fileredList = PLANET_LIST.filter(item => {
             const itemData = item.name.toUpperCase()
             const userTypedText = text.toUpperCase()
-
-            return itemData.indexOf(userTypedText) > -1
+//-1 means it is equal to text which user typed
+            return itemData.indexOf(userTypedText) > -1   
         })
 
         setPlanetList(fileredList)
@@ -266,8 +266,7 @@ export default function Home({ navigation }) {
       <SafeAreaView style={{ backgroundColor: colors.black, flex: 1 }}>
         <PlanetHeader />
 
-        <TextInput
-          placeholder="Search planet by name..."
+        <TextInput  placeholder="Search planet by name..."
           placeholderTextColor={colors.white}
           onChangeText={(text) => searchFilter(text)}
           autoCorrect={false}
@@ -296,8 +295,7 @@ export default function Home({ navigation }) {
           onPress={() => setVisible(!visible)}
           style={{  alignSelf: "flex-end", paddingRight: spacing[5] }}
         >
-          <View
-            style={{
+          <View style={{
               width: 50,
               height: 50,
               borderRadius: 25,
@@ -314,8 +312,7 @@ export default function Home({ navigation }) {
             visible={visible} 
             closeModal={() => setVisible(false)}
             filterAction={filterPlanets}
-            resetFilter={onReset}
-        />
+            resetFilter={onReset} />
 
         <StatusBar barStyle="light-content" />
       </SafeAreaView>

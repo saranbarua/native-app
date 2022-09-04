@@ -261,7 +261,6 @@ export default function Home({ navigation }) {
     const onReset = () => {
         setPlanetList(PLANET_LIST);
     }
-
     return (
       <SafeAreaView style={{ backgroundColor: colors.black, flex: 1 }}>
         <PlanetHeader />

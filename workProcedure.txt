@@ -1,4 +1,7 @@
 -> Open the project, npx react-app
 -> Create a folder "src" and create Subfolder "themes,components,"
 ->now open a file which name is colors.js and here exports the color.
-->download expo Font from expo font
+->download expo Font from expo font.
+-> render SVG from expo.
+-> reactsvg.com
+->

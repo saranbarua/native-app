@@ -237,7 +237,7 @@ export default function Home({ navigation }) {
         const fileredList = PLANET_LIST.filter(item => {
             const itemData = item.name.toUpperCase()
             const userTypedText = text.toUpperCase()
-//-1 means it is equal to text which user typed
+     //-1 means it is equal to text which user typed
             return itemData.indexOf(userTypedText) > -1   
         })
 
